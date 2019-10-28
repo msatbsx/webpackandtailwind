@@ -1,0 +1,26 @@
+{
+  "name": "webpacktailwind",
+  "version": "1.0.0",
+  "description": "Starter pack webpack plus tailwindcss",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified yet ;) \" && exit 1",
+    "build": "webpack",
+    "dev": "webpack --mode=development"
+  },
+  "author": "michalszymaniak",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "tailwindcss": "^1.1.3"
+  }
+}

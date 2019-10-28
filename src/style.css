@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+.box-2xl{
+   @apply rounded-b-lg mt-12 max-w-2xl mx-auto;
+}
+.box-gray{
+  @apply rounded-lg overflow-hidden border border-gray-400 p-4 bg-gray-200 p-8;
+}
+.topbox-white{
+  @apply p-4 bg-white rounded max-w-xs w-full shadow-lg select-none overflow-hidden mx-auto;
+}
+
+@tailwind utilities;
