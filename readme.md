@@ -8,11 +8,9 @@ Includes:
 
 How to run?
 
-`npm run build` 
+first: `npm install`
 
-or
-
-`npm run dev`
+then `npm run build` or `npm run dev`
 
 and visit /dist/index.html
 
