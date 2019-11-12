@@ -2,6 +2,11 @@
 
 @tailwind components;
 
+@font-face {
+  font-family: 'Plex';
+  src:  url('./assets/IBMPlexSans-Thin.ttf');
+}
+
 .box-2xl{
    @apply rounded-b-lg mt-12 max-w-2xl mx-auto;
 }
@@ -9,7 +14,8 @@
   @apply rounded-lg overflow-hidden border border-gray-400 p-4 bg-gray-200 p-8;
 }
 .topbox-white{
-  @apply p-4 bg-white rounded max-w-xs w-full shadow-lg select-none overflow-hidden mx-auto;
+  @apply p-4 bg-white rounded max-w-xs w-full shadow-lg select-none overflow-hidden mx-auto text-2xl;
+  font-family:'Plex';
 }
 
 @tailwind utilities;
