@@ -1,8 +1,10 @@
+require('dotenv').config()
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: process.env.NODE_ENV,
   entry: './src/index.js',
   plugins: [
     new CleanWebpackPlugin(),
@@ -18,21 +20,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: [
-                require('tailwindcss'),
-                require('autoprefixer'),
-              ],
-            },
-          },
-        ],
-      }
+        use: ['style-loader', 'postcss-loader'],
+      },
     ]
   }
 }
