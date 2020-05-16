@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --chrome --kiosk C:/Users/RetailX/Documents/movie.html
