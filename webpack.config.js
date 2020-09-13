@@ -2,7 +2,7 @@ require('dotenv').config()
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -12,9 +12,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webapack&Tailwind starter',
     }),
-    new CopyWebpackPlugin([
-      {from: 'src/assets', to: 'assets'},
-    ])
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/assets', to: 'assets' },
+      ]
+    }),
   ],
   output: {
     filename: 'bundle.js',
