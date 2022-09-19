@@ -1,4 +1,4 @@
-## Starter for simple js project
+## Starter for simple, no framework, web JS project
 
 Includes:
 
@@ -18,7 +18,7 @@ If you want to use postcss to remove unused style classes please create `.env` f
 
 ### Important notes:
 
-contains `CleanWebpackPlugin` which deletes content of /dist folder
+contains `CleanWebpackPlugin` which deletes content of /dist folder each time you build your app.
 
 ### Author
 
